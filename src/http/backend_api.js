@@ -1,7 +1,6 @@
 import { ElLoading } from 'element-plus'
 import api from './axios.js'
 import { useUserStore } from '../store/user.js'
-
 const userStore = useUserStore() // 获取用户 store
 const token = userStore.token // 获取 token
 const headers = {
