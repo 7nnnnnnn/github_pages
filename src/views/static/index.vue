@@ -1,7 +1,7 @@
 <template>
   <router-link to="/login">
     <el-button type="primary">
-      前往登录
+      前往登录页面
     </el-button>
   </router-link>
 </template>
