@@ -24,7 +24,7 @@ const adCatePage = (data) => {
     data,
   })
 }
-const adCateDelId = (params)
+const adCateDelId = (params)=>{
   return instance.request({
     url: 'api/adcate/delete',
     params,

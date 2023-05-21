@@ -24,6 +24,11 @@ const routes = [
     component: () => import('@/views/admin/backend_api.vue'),
   },
   {
+    path: '/permission',
+    name: 'permission',
+    component: () => import('@/views/admin/permission.vue'),
+  },
+  {
     path: '/adcate',
     name: 'adCate',
     component: () => import('@/views/static/adCate.vue'), // 懒加载
