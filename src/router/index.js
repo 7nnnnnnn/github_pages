@@ -24,6 +24,11 @@ const routes = [
     component:()=>import('@/views/admin/dormitory.vue')
   },
   {
+    path:'/role',
+    name:'role',
+    component:()=>import('@/views/admin/role.vue'),
+  },
+  {
     path: '/backend_api',
     name: 'backend_api',
     component: () => import('@/views/admin/backend_api.vue'),
