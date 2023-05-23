@@ -103,7 +103,7 @@
 
 <script>
 import { defineComponent } from "vue"
-import {getallDepartment,getoneDepartment,addDepartment,editDepartment,deleteDepartment} from '../http/index'//在http的文件夹里index.js 是相对应的
+import {getallDepartment,getoneDepartment,addDepartment,editDepartment,deleteDepartment} from '@/http/department'//在http的文件夹里index.js 是相对应的
 import { cloneDeep } from 'lodash-es'
 import { ElMessage, ElMessageBox } from 'element-plus';
 export default defineComponent({

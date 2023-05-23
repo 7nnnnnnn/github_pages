@@ -24,6 +24,11 @@ const routes = [
     component:()=>import('@/views/admin/dormitory.vue')
   },
   {
+    path:'/department',
+    name:'department',
+    component:()=>import('@/views/admin/department.vue')
+  },
+  {
     path:'/role',
     name:'role',
     component:()=>import('@/views/admin/role.vue'),
