@@ -59,6 +59,8 @@ const routes = [
     name: 'login',
     component: () => import('@/views/static/login.vue'), // 懒加载
   },
+   { path: '/articleCat',name:'articleCat', component:()=>import('../views/admin/articleCat.vue') //懒加载 
+},
   {
     path: '/admin',
     name: 'admin',
