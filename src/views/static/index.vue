@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <router-link to="/login">
     <el-button type="primary">
       前往登录页面
@@ -98,3 +99,12 @@ export default defineComponent({
   background-color: red;
 }
 </style>
+=======
+    <router-link to="/classroom_controller">
+        <h1>路径:src/views/static/index</h1>
+        <el-button type="primary">
+            前往
+            </el-button>
+            </router-link>
+</template>
+>>>>>>> 832f8be (2003010107林祖源)

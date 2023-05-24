@@ -1,55 +1,90 @@
-//统一api管理
-import instance from './axios'
-const userLogin = (data) => {
-  //返回Promise对象
-  return instance.request({
-    url: 'api/mobile/elogin', //url=baseUrl+url,
-    method: 'post',
-    data,
-    headers: {},
-  })
-}
+import instance from "./axios";
 
-const adminLogin = (data) => {
-  return instance.request({
-    url: '',
-    method: '',
-    data,
-  })
-}
-const adCatePage = (data) => {
-  return instance.request({
-    url: 'api/adcate/page',
-    method: 'post',
-    data,
-  })
-}
-const adCateDelId = (params)=>{
-  return instance.request({
-    url: 'api/adcate/delete',
-    params,
-  })
-}
-const adCateAdd = (data) => {
-  return instance.request({
-    url: 'api/adcate/add',
-    method: 'post',
-    data,
-  })
-}
-const adCateEdit = (data) => {
-  return instance.request({
-    url: 'api/adcate/edit',
-    method: 'post',
-    data,
-  })
-}
-const adminLogin1 = function (data) {
-  return instance.request({
-    url: '',
-    method: 'post',
-    data,
-  })
-}
+const add = (data) => {
+    return instance.request({
+       url:'api/school/add',
+       method:'post',
+       data
+    })
+ }
+ const all = () => {
+    return instance.request({
+       url:'api/school/all',
+       method:'get',
+    })
+ }
+ const checkName = (data) => {
+    return instance.request({
+       url:'api/school/checkname',
+       method:'get',
+       params:data
+    })
+ }
+ const getCommunitiesByColums = (data) => {
+    return instance.request({
+       url:'api/school/colums',
+       method:'get',
+       params:data
+    })
+ }
+ const remove = (data) => {
+    return instance.request({
+       url: 'api/school/delete',
+       method: 'get',
+       params: data
+    })
+ }
+ const update = (data) => {
+    return instance.request({
+       url:'api/school/edit',
+       method:'post',
+       data
+    })
+ }
+ const query = (data) => {
+    return instance.request({
+       url:'api/school/enable',
+       method:'get',
+       params:data
+    })
+ }
+const one = (data) => {
+    return instance.request({
+       url:'api/school/one',
+       method:'get',
+       params:data
+    })
+ }
+ const getSchoolsByRegion = (data) => {
+    return instance.request({
+       url:'api/school/search',
+       method:'post',
+       data
+    })
+ }
 
-export { userLogin, adminLogin, adCatePage, adCateDelId, adCateAdd, adCateEdit }
+
+
+
+
+ const getschoolsByColums = (data) => {
+    return instance.request({
+       url:'api/school/colums',
+       method:'get',
+       params: data
+    })
+ }
+
+
+export default {
+    add,
+    all,
+    checkName,
+    getCommunitiesByColums,
+    remove,
+    update,
+    query,
+    one,
+    getSchoolsByRegion
+ }
+

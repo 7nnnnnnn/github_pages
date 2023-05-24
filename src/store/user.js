@@ -14,15 +14,15 @@ export const useUserStore = defineStore('user', {
         return {
             token: '',
             userinfo: {
-                "state": 1,
-                "id": 0,
-                "userName": "",
-                "userType": "",
-                "token": "",
-                "binding": 0,
-                "createTime": "",
-                "updateTime": "",
-                "email": ""
+                state: 1,
+                id: 0,
+                userName: "",
+                userType: "",
+                token: "",
+                binding: 0,
+                createTime: "",
+                updateTime: "",
+                email: ""
             }
         }
     },

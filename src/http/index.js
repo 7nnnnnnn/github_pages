@@ -54,5 +54,5 @@ export {
     adCatePage,
     adCateDelId,
     adCateAdd,
-    adCateEdit
+    adCateEdit,
 } 
