@@ -307,7 +307,7 @@ export default defineComponent({
       }
       this.filteredInfo = this.all.filter((item) => item.classinfo === this.selectedClass);
     },
-
+ 
 
     watch: {
       selectedClass(value) {
