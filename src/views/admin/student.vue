@@ -98,9 +98,9 @@ export default defineComponent({
     return {
       allinfo: [], // 初始化数据数组
       all: [],
-      dialogFormVisible: false,
-      formLabelWidth: '80px',
-      search: "",
+      dialogFormVisible: false, //窗口显示标记
+      formLabelWidth: '80px', //长度
+      search: "",//输入框内容
       total: 0,
       selectedClass: '', //选中的班级信息
       classinfoList: [], //所有班级信息
@@ -276,6 +276,7 @@ export default defineComponent({
           console.log(res.data); // 确认返回数据格式是否正确
           let datas = res.data;
           this.allinfo = [];
+          //RENJ 2003010133 zxy
           if (Array.isArray(datas?.student)) {
             datas.student = [datas.student];
           }
@@ -291,6 +292,7 @@ export default defineComponent({
         .catch(err => {
           console.log(err);
           ElMessage('未找到该学生');
+          this.resetting();
           this.page.total = 0;
           this.page.current = 0;
           console.log(this.page.total)
