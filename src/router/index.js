@@ -99,9 +99,9 @@ const routes = [
         component: Index,   //key:value  默认//页面组件 components 普通组件 页面组件和普通组件是一对多
     },
     {
-        path: '/adcate',
-        name: 'adCate',
-        component: () => import('../views/static/adCate.vue')// 懒加载
+        path: '/classroom-controller',
+        name: 'classroom-controller',
+        component: () => import('../views/admin/classroom-controller.vue')// 懒加载
     },
     {
         path: '/login',
@@ -137,11 +137,15 @@ const routes = [
                 name: 'admin-forgetpassword',
                 component: () => import('@/views/admin/forgetpassword.vue')
             },
+<<<<<<< HEAD
             {
                 path: 'student',
                 name: 'admin-student',
                 component: () => import('@/views/admin/student.vue')
             }
+=======
+         
+>>>>>>> 832f8be (2003010107林祖源)
 
         ]
     },
