@@ -23,6 +23,12 @@ const routes = [
     name:'dormitory',
     component:()=>import('@/views/admin/dormitory.vue')
   },
+  ,
+  {
+    path:'/classinfo',
+    name:'classinfo',
+    component:()=>import('@/views/admin/classinfo.vue')
+  },
   {
     path:'/department',
     name:'department',
