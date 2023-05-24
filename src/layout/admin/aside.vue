@@ -17,7 +17,7 @@
                     <el-menu-item index="/admin/logout">安全登出</el-menu-item>
                     <el-menu-item index="/admin/forgetpassword">忘记密码</el-menu-item>
                 </el-menu-item-group>
-                
+                <el-menu-item index="/admin/student">学生管理</el-menu-item>
             </el-sub-menu>
         </el-menu>
     </el-aside>
