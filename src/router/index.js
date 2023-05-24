@@ -45,6 +45,11 @@ const routes = [
     name:'role',
     component:()=>import('@/views/admin/role.vue'),
   },
+   {
+    path: '/menu_rule',
+    name: 'menu_rule',
+    component: () => import('@/views/admin/menu_rule.vue'),
+  },
   {
     path: '/backend_api',
     name: 'backend_api',
