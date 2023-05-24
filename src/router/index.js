@@ -86,6 +86,11 @@ const routes = [
         component: () => import('@/views/admin/logout.vue'),
       },
       {
+        path: '/major',
+        name: 'major',
+        component: () => import('@/views/admin/major.vue'),
+      },
+      {
         path: 'changepassword',
         name: 'admin-changepassword',
         component: () => import('@/views/admin/changepassword.vue'),
