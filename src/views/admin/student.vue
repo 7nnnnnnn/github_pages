@@ -284,7 +284,7 @@ export default defineComponent({
           if (this.allinfo.length == 0) {
             this.page.total = 0;
           }
-          手动更新分页组件的当前页码和总记录数
+          // 手动更新分页组件的当前页码和总记录数
           this.page.current = 1;
           this.page.total = this.allinfo.length;
         })
