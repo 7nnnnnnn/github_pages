@@ -1,15 +1,14 @@
-import axios from "axios";
-import { useUserStore } from "../store/user";
-import {showLoading,hideLoading } from '@/utils/eloading'
+import axios from "axios"
+import { useUserStore } from "../store/user"
 
 //创建axios实例
-const instance=axios.create({
+const instance =axios.create({
     baseURL:'http://api.jqrjq.cn/',
     timeout:6000
 })
 //请求拦截器
 instance.interceptors.request.use((config)=>{
-    showLoading()
+
     const userStore=useUserStore();
     const {token}=userStore;
     // console.log(token);
@@ -21,12 +20,23 @@ instance.interceptors.request.use((config)=>{
 
 // 响应拦截器
 instance.interceptors.response.use((res)=>{
-    hideLoading()
+
     return res.data;
 },(err)=>{
-    hideLoading()
+
     return Promise.reject(err)
 })
 
-export default instance;
+export default instance
 
+//Promise对象 异步处理对象
+
+const promise = new Promise((resolve, reject) => {
+    //如果成功
+    resolve()
+    //失败
+    reject()
+  })
+  
+  promise.then((res) => {}).catch((err) => {})
+  

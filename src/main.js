@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue' //首页面
 import router from './router'
+import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css' //全局样式
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 import axios from './http/axios'
@@ -12,7 +13,7 @@ const app = createApp(App)
 app.use(pinia) //挂载pinia
 //全局注册组件  全局组件
 //app.component('MyComponent',MyComponent)
-
+app.use(ElementPlus)
 app.use(router) //挂载router
 
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
