@@ -30,5 +30,6 @@ export default defineConfig({
         additionalData: '@import "./src/style/main.scss";'
       }
     }
-  }
+  },
+  base:"/https://github.com/7nnnnnnn/7nnnnnnn.github.io/"
 })
