@@ -13,39 +13,38 @@ import { useUserStore } from '../store/user'
 
 //路由表
 const routes = [
-<<<<<<< HEAD
   {
     path: '/', //访问路径 http://127.0.0.1:5173/cx/XfDGdOkjVo7deIxQjurcf8BEnNf
     name: 'home', //命名路由
     component: Index, //key:value  默认//页面组件 components 普通组件 页面组件和普通组件是一对多
   },
   {
-    path:'/dormitory',
-    name:'dormitory',
-    component:()=>import('@/views/admin/dormitory.vue')
+    path: '/dormitory',
+    name: 'dormitory',
+    component: () => import('@/views/admin/dormitory.vue')
   },
   ,
   {
-    path:'/classinfo',
-    name:'classinfo',
-    component:()=>import('@/views/admin/classinfo.vue')
+    path: '/classinfo',
+    name: 'classinfo',
+    component: () => import('@/views/admin/classinfo.vue')
   },
   {
-    path:'/admin',
-    name:'admin',
-    component:()=>import('@/views/admin/admin.vue')
+    path: '/admin',
+    name: 'admin',
+    component: () => import('@/views/admin/admin.vue')
   },
   {
-    path:'/department',
-    name:'department',
-    component:()=>import('@/views/admin/department.vue')
+    path: '/department',
+    name: 'department',
+    component: () => import('@/views/admin/department.vue')
   },
   {
-    path:'/role',
-    name:'role',
-    component:()=>import('@/views/admin/role.vue'),
+    path: '/role',
+    name: 'role',
+    component: () => import('@/views/admin/role.vue'),
   },
-   {
+  {
     path: '/menu_rule',
     name: 'menu_rule',
     component: () => import('@/views/admin/menu_rule.vue'),
@@ -69,6 +68,25 @@ const routes = [
     path: '/login',
     name: 'login',
     component: () => import('@/views/static/login.vue'), // 懒加载
+  },
+  {
+    path: '/competition',
+    name: 'competition',
+    component: () => import('@/views/admin/competition.vue'),
+  },
+  {
+    path: '/studentCompetition',
+    name: 'studentCompetition',
+    component: () => import('@/views/admin/studentCompetition.vue'),
+  }, {
+    path: '/teacherCompetition',
+    name: 'teacherCompetition',
+    component: () => import('@/views/admin/teacherCompetition.vue'),
+  },
+  {
+    path: '/view',
+    name: 'view',
+    component: () => import('@/views/static/view.vue'),
   },
   {
     path: '/admin',
@@ -105,80 +123,17 @@ const routes = [
         name: 'admin-forgetpassword',
         component: () => import('@/views/admin/forgetpassword.vue'),
       },
-    ],
+      {
+        path: 'student',
+        name: 'admin-student',
+        component: () => import('@/views/admin/student.vue')
+      }],
   },
-=======
-    {
-        path: '/',//访问路径 http://127.0.0.1:5173/cx/XfDGdOkjVo7deIxQjurcf8BEnNf 
-        name: 'home', //命名路由
-        component: Index,   //key:value  默认//页面组件 components 普通组件 页面组件和普通组件是一对多
-    },
-    {
-        path: '/classroom-controller',
-        name: 'classroom-controller',
-        component: () => import('../views/admin/classroom-controller.vue')// 懒加载
-    },
-    {
-        path: '/login',
-        name: 'login',
-        component: () => import('../views/static/login.vue')// 懒加载
-    },
-    {
-        path: '/admin',
-        name: 'admin',
-        component: LayoutAdmin,
-        children: [
-            {
-                path: '',
-                name: 'admin-index',
-                component: () => import('@/views/admin/index.vue')
-            },
-            {
-                path: 'info',
-                name: 'admin-info',
-                component: () => import('@/views/admin/info.vue')
-            },
-            {
-                path: 'logout',
-                name: 'admin-logout',
-                component: () => import('@/views/admin/logout.vue')
-            }, {
-                path: 'changepassword',
-                name: 'admin-changepassword',
-                component: () => import('@/views/admin/changepassword.vue')
-            },
-            {
-                path: 'forgetpassword',
-                name: 'admin-forgetpassword',
-                component: () => import('@/views/admin/forgetpassword.vue')
-            },
-<<<<<<< HEAD
-            {
-                path: 'student',
-                name: 'admin-student',
-                component: () => import('@/views/admin/student.vue')
-            }
-=======
-         
->>>>>>> 832f8be (2003010107林祖源)
-
-        ]
-    },
-
-
-
-    {
-        path: '/:pathMatch(.*)*',
-        name: '404',
-        component: () => import('../views/404.vue')// 懒加载  
-    }
->>>>>>> 1da1d93 (2003010133张希尧)
-
   {
     path: '/:pathMatch(.*)*',
     name: '404',
-    component: () => import('../views/404.vue'), // 懒加载
-  },
+    component: () => import('../views/404.vue')// 懒加载  
+  }
 ]
 const router = createRouter({
   //模式

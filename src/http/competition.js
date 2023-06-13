@@ -1,64 +1,71 @@
 import instance from "./axios";
 import api from './axios.js'
-const userLogin=(data)=>{
+const userLogin = (data) => {
     return instance.request({
-        url:'api/mobile/elogin',
-        method:'post',
+        url: 'api/mobile/elogin',
+        method: 'post',
         data,
     })
 }
 
-const competitionPage=(data)=>{
+const competitionPage = (data) => {
     return instance.request({
-        url:'api/competition/page',
-        method:'post',
+        url: 'api/competition/page',
+        method: 'post',
         data
     })
 }
-const competitionDelId=(params)=>{
+const competitionDelId = (params) => {
     return instance.request({
-        url:'api/competition/delete',
+        url: 'api/competition/delete',
         params
     })
 }
 
-const competitionAdd=(data)=>{
+const competitionAdd = (data) => {
     return instance.request({
-        url:'api/competition/add',
-        method:'post',
+        url: 'api/competition/add',
+        method: 'post',
         data
     })
 }
 
-const competitionEdit=(data)=>{
+const competitionEdit = (data) => {
     return instance.request({
-        url:'api/competition/edit',
-        method:'post',
+        url: 'api/competition/edit',
+        method: 'post',
         data
     })
 }
-
-const competitionAll=(params)=>{
+const school = async (data) => {
     return instance.request({
-        url:'api/competition/all',
+        url: '/api/school/all',
+        method: 'get',
+        data
+    })
+}
+const competitionAll = (params) => {
+    return instance.request({
+        url: 'api/competition/all',
         params
     })
 }
-const competitionOne=(params)=>{
+const competitionOne = (params) => {
     return instance.request({
-        url:'api/competition/one',
+        url: 'api/competition/one',
         params
     })
 }
 
 
 
-export{
+export default {
     userLogin,
     competitionPage,
     competitionDelId,
     competitionAdd,
     competitionEdit,
     competitionAll,
-    competitionOne
+    competitionOne,
+    school
 }
