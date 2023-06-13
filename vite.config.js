@@ -31,5 +31,5 @@ export default defineConfig({
       }
     }
   },
-  base:"/https://github.com/7nnnnnnn/7nnnnnnn.github.io/"
+  
 })
