@@ -3,7 +3,7 @@ import { useUserStore } from "../store/user"
 
 //创建axios实例
 const instance =axios.create({
-    baseURL:'https://api.jqrjq.cn/',
+    baseURL:'https://api.jqrjq.cn/doc.html',
     timeout:6000
 })
 //请求拦截器
